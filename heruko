@@ -1,3 +1,11 @@
+import streamlit as st
+
+st.header('Divide two numbers')
+
+def user_input_features():
+  dividend = st.number_input('DIVIDEND', min_value = -10000, max_value = 10000)
+  divisor = st.number_input('DIVISOR', min_value = 1, max_value = 10000)
+
 def divide(a, b):
   c = a/b
   return c
